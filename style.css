@@ -2,21 +2,27 @@
 
 body{
     background-color: rgba(0, 0, 0, 0.882);
+    margin: 0;
 
 }
+
 h1{
     color: white;
     font-weight: bold;
     text-align: center;
     font-family: "Titillium Web";
-    font-size: 50px;
+    font-size: 70px;
+    text-shadow: 3px 6px 4px black;
 
 }
-p{
+p,li {
     color: white;
     font-family: "Titillium Web";
     font-weight: 300;
     font-style: normal;
+    font-size: 17px;
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);
+ 
 }
 
 .tekst{
@@ -24,3 +30,74 @@ p{
     
 }
 
+/* liste */
+
+.liste{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.lista1  {
+    
+    display: inline-block;
+    float: none;
+    text-align: left;
+    margin: 0 20px;
+}
+
+ol {
+    
+    list-style: square;
+}
+
+
+/* pozadina na naslovima listi */
+.programi_pozadina{
+    background-color: rgb(58, 58, 58);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.pozadina{
+    background-color: rgb(58, 58, 58);
+    padding: 5px;
+    
+}
+
+/* dizajn slova na naslovu PORTFOLIO */
+.slova{
+    color:rgb(152, 152, 152) ;
+    
+}
+
+
+
+
+/* navigacijka traka */
+
+ul {
+  list-style: none;
+  margin:0px;
+  padding: 0;
+  overflow: hidden;
+  /* background-color: rgb(88, 88, 88); */
+
+  display: flex;                
+  justify-content: center;     
+  align-items: center;       
+}
+
+
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 25px 50px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+  text-decoration: underline;
+}
