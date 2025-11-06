@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+     <ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+<h1>K<span class="slova">O</span>N<span class="slova">T</span>A<span class="slova">K</span>T</h1>
+
+<!--KONTAKT FORMAX -->
+<!-- 
+<form id="kontakt-forma"  method="get" action="#">
+  
+  <fieldset>
+    <legend>Osobni podaci</legend>
+    
+    <label for="ime-prezime">Ime :</label>
+    <input type="text" id="ime-prezime" name="ime-prezime" placeholder="Unesite ime" required>
+
+    <label for="ime-prezime">Prezime :</label>
+    <input type="text" id="ime-prezime" name="ime-prezime" placeholder="Unesite prezime" required>
+
+    <label for="email-adresa">Email:</label>
+    <input type="email" id="email-adresa" name="email-adresa" placeholder="Unesite email" required>
+
+  </fieldset>
+
+  <fieldset>
+    <legend>Poruka</legend>
+
+    <label for="poruka">Poruka:</label>
+    <textarea name="poruka" id="poruka" placeholder="OVjde unesite svoju poruku" required></textarea>
+
+    <label for="kako-me-pronasli">Kako ste me pronašli?</label>
+    <input list="izvori" id="kako-me-pronasli" name="kako-me-pronasli" placeholder="Odaberite iz liste">
+    <datalist id="izvori">
+      <option value="LinkedIn">
+      <option value="Instagram">
+      <option value="Google pretraga">
+      <option value="Preporuka prijatelja">
+      <option value="Ostalo"></option>
+    </datalist>
+
+  </fieldset>
+
+  <button type="submit" value="Pošalji">Pošalji</button>
+  <button type="reset" value="Poništi">Poništi</button>
+</form> -->
+
+<section id="kontakt">
+ 
+  <form id="kontakt-forma">
+
+    <fieldset>
+      <legend>Osobni podaci</legend>
+      
+      <label for="ime">Ime:</label>
+      <input type="text" id="ime" name="ime" placeholder="Unesite vaše ime" required>
+
+      <label for="prezime">Prezime:</label>
+      <input type="text" id="prezime" name="prezime" placeholder="Unesite vaše prezime" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Unesite email" required>
+
+      <label for="telefon">Telefon:</label>
+      <input type="tel" id="telefon" name="telefon" placeholder="Unesite broj telefona">
+
+    </fieldset>
+
+    <fieldset>
+
+            <label for="tema">Tema poruke:</label>
+      <select id="tema" name="tema" required >
+        <option value="">Odaberite temu</option>
+        <option value="upit">Upit</option>
+        <option value="prijedlog">Prijedlog</option>
+        <option value="pohvala">Pohvala</option>
+        <option value="prigovor">Prigovor</option>
+      </select>
+
+      <legend>Vaša poruka</legend>
+      <label for="poruka">Poruka:</label>
+      <textarea id="poruka" name="poruka" placeholder="Ovdje unesite svoju poruku" required></textarea>
+
+    
+
+<label for="pronasli">Kako ste me pronasli</label>
+  <input list="lista-pronasli" name="pronasli" id="pronasli" placeholder="Ovdje odaberite ili unesite svoju poruku">
+  <datalist id="lista-pronasli" >
+    <option value="LinkedIn">
+  <option value="Instagram">
+  <option value="Google pretraga">
+  <option value="Preporuka prijatelja">
+  </datalist>
+    </fieldset>
+
+  
+
+    <input type="submit" value="Pošalji">
+    <input type="reset" name="" id="" value="Resetiraj">
+  </form>
+</section>
+
+
+
+</body>
+</html>
