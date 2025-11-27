@@ -12,54 +12,15 @@
 
 
 
-     <ul>
+<ul>
   <li><a href="index.html">Home</a></li>
   <li><a href="#news">News</a></li>
   <li><a href="#contact">Contact</a></li>
   <li><a href="#about">About</a></li>
 </ul>
 
+
 <h1>K<span class="slova">O</span>N<span class="slova">T</span>A<span class="slova">K</span>T</h1>
-
-<!--KONTAKT FORMAX -->
-<!-- 
-<form id="kontakt-forma"  method="get" action="#">
-  
-  <fieldset>
-    <legend>Osobni podaci</legend>
-    
-    <label for="ime-prezime">Ime :</label>
-    <input type="text" id="ime-prezime" name="ime-prezime" placeholder="Unesite ime" required>
-
-    <label for="ime-prezime">Prezime :</label>
-    <input type="text" id="ime-prezime" name="ime-prezime" placeholder="Unesite prezime" required>
-
-    <label for="email-adresa">Email:</label>
-    <input type="email" id="email-adresa" name="email-adresa" placeholder="Unesite email" required>
-
-  </fieldset>
-
-  <fieldset>
-    <legend>Poruka</legend>
-
-    <label for="poruka">Poruka:</label>
-    <textarea name="poruka" id="poruka" placeholder="OVjde unesite svoju poruku" required></textarea>
-
-    <label for="kako-me-pronasli">Kako ste me pronašli?</label>
-    <input list="izvori" id="kako-me-pronasli" name="kako-me-pronasli" placeholder="Odaberite iz liste">
-    <datalist id="izvori">
-      <option value="LinkedIn">
-      <option value="Instagram">
-      <option value="Google pretraga">
-      <option value="Preporuka prijatelja">
-      <option value="Ostalo"></option>
-    </datalist>
-
-  </fieldset>
-
-  <button type="submit" value="Pošalji">Pošalji</button>
-  <button type="reset" value="Poništi">Poništi</button>
-</form> -->
 
 <section id="kontakt">
  
@@ -83,9 +44,13 @@
     </fieldset>
 
     <fieldset>
+      <legend>Vaša poruka</legend>
+      <label for="poruka">Poruka:</label>
+      <textarea id="poruka" name="poruka" placeholder="Ovdje unesite svoju poruku" required></textarea>
+
 
             <label for="tema">Tema poruke:</label>
-      <select id="tema" name="tema" required >
+      <select id="tema" name="tema" required >  
         <option value="">Odaberite temu</option>
         <option value="upit">Upit</option>
         <option value="prijedlog">Prijedlog</option>
@@ -93,16 +58,13 @@
         <option value="prigovor">Prigovor</option>
       </select>
 
-      <legend>Vaša poruka</legend>
-      <label for="poruka">Poruka:</label>
-      <textarea id="poruka" name="poruka" placeholder="Ovdje unesite svoju poruku" required></textarea>
-
+      
     
 
 <label for="pronasli">Kako ste me pronasli</label>
   <input list="lista-pronasli" name="pronasli" id="pronasli" placeholder="Ovdje odaberite ili unesite svoju poruku">
   <datalist id="lista-pronasli" >
-    <option value="LinkedIn">
+  <option value="LinkedIn">
   <option value="Instagram">
   <option value="Google pretraga">
   <option value="Preporuka prijatelja">
