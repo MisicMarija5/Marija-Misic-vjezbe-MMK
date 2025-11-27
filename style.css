@@ -1,247 +1,213 @@
-
-
 body{
     background-color: rgba(0, 0, 0, 0.882);
     margin: 0;
-
+    font-family: "Titillium Web", sans-serif;
 }
 
 h1,h4{
     color: white;
     font-weight: bold;
     text-align: center;
-    font-family: "Titillium Web";
     font-size: 70px;
     text-shadow: 3px 6px 4px black;
-
+    margin-top: 30px; /* malo niže od navigacije */
 }
+
 p,li {
     color: white;
-    font-family: "Titillium Web";
     font-weight: 300;
-    font-style: normal;
     font-size: 17px;
     text-shadow: 2px 2px 3px rgb(0, 0, 0);
- 
 }
 
+/* Tekst u glavnom dijelu */
 .tekst{
-    padding: 50px 300px;
-    
+    padding: 50px 50px;
+    text-align: justify;
+    position: relative;
+    margin: 20px auto;
 }
 
 /* liste */
-
 .liste{
     text-align: center;
     margin-top: 30px;
 }
 
 .lista1  {
-    
     display: inline-block;
-    float: none;
+    vertical-align: top;
+    margin: 0 15px;
     text-align: left;
-    margin: 0 20px;
+    float: none;
 }
 
 ol {
-    
     list-style: square;
 }
-
 
 /* pozadina na naslovima listi */
 .programi_pozadina{
     background-color: rgb(58, 58, 58);
     padding: 5px 15px;
     border-radius: 5px;
+    position: relative;
+    margin: 20px auto;
 }
 
 .pozadina{
     background-color: rgb(58, 58, 58);
     padding: 5px;
-    
+    position: relative;
+    margin: 20px auto;
 }
 
 /* dizajn slova na naslovu PORTFOLIO */
 .slova{
-    color:rgb(152, 152, 152) ;
-    
+    color: rgb(152, 152, 152);
 }
-
-
-
 
 /* navigacijka traka */
-
 ul {
-  list-style: none;
-  margin:0px;
-  padding: 0;
-  overflow: hidden;
-  /* background-color: rgb(88, 88, 88); */
-
-  display: flex;                
-  justify-content: center;     
-  align-items: center;       
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+    display: flex;                
+    justify-content: center;     
+    align-items: center;       
 }
 
-
+ul li {
+    margin: 0 10px;
+}
 
 ul li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 25px 50px;
-  text-decoration: none;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 25px 50px;
+    text-decoration: none;
 }
 
 ul li a:hover {
-  background-color: #111111;
-  text-decoration: underline;
+    background-color: #111111;
+    text-decoration: underline;
 }
-
-
-
-
 
 /* FORMA */
-
 form {
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 20px;
-  background-color: #1a1a1a;
-  color: white;
-  border-radius: 10px;
-  font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    display: block;
 }
 
-
 fieldset {
-  border: 2px solid #555;
-  margin-bottom: 20px;
-  padding: 30px;
-  border-radius: 8px;
+    border: 2px solid #555;
+    margin-bottom: 20px;
+    padding: 30px;
+    border-radius: 8px;
 }
 
 legend {
-  padding: 0 10px;
-  font-weight: bold;
+    padding: 0 10px;
+    font-weight: bold;
 }
-
 
 label {
-  display: block;
-  margin-top: 10px;
+    display: block;
+    margin-top: 10px;
 }
-
 
 input,
-select {
-  width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #888;
-  border-radius: 5px;
-  background-color: #222;
-  color: white;
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #888;
+    border-radius: 5px;
+    background-color: #222;
+    color: white;
+    resize: vertical;
 }
-
-textarea{
-  width: 100%;
-  padding: 8px 0px 30px 10px;
-  border: 1px solid #888;
-  border-radius: 5px;
-  background-color: #222;
-  color: white;
-  resize: vertical;
-
-}
-
-
-
-
-/* Fokus efekt */
 
 input[type="text"] {
-  border: 2px solid #555;  
-  background-color: #222;   
-  color: white;             
-  padding: 8px;
-  border-radius: 5px;
- 
+    border: 2px solid #555;  
+    background-color: #222;   
+    color: white;             
+    padding: 8px;
+    border-radius: 5px;
 }
 
 input:focus,
 textarea:focus,
 select:focus {
-  border-color: #00bfff;
-  outline: none;
+    border-color: #00bfff;
+    outline: none;
 }
-
 
 input[type="submit"],
 input[type="reset"] {
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #2e2e2e;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  font-family: Arial, sans-serif;
-  transition: background-color 0.2s, transform 0.1s;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #2e2e2e;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.2s, transform 0.1s;
+  
+    margin-right: 10px;
 }
 
-
-
 /* tablica */
-
 table {
-  width: 80%;
-  margin: 40px auto;
-  border-collapse: collapse;
-  border-radius: 15px;
-  overflow: hidden;
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
 }
 
 th, td {
-  padding: 12px 18px;
-  border: 1px solid #000000;
-  text-align: left;
-  color: white;
-  background-color: #1a1a1a;
-  height: 20px;
+    padding: 12px 18px;
+    border: 1px solid #000000;
+    text-align: left;
+    color: white;
+    background-color: #1a1a1a;
+    height: 20px;
 }
 
 thead th {
-  background-color: #505050;
-  color: black;
+    background-color: #505050;
+    color: black;
 }
 
-
 thead th[colspan] {
-  text-align: center;
-  font-size: 1.2em;
-  font-weight: bold;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 thead tr:nth-child(2) th {
-  background-color: #4a4a4a;
-  color: white;
+    background-color: #4a4a4a;
+    color: white;
 }
 
 .table-title {
-  background-color: #303030; 
-  text-align: center;
-  font-size: 1.4em;
-  font-weight: bold;
-  color: white;
+    background-color: #303030; 
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: white;
 }
-
-
-
-
