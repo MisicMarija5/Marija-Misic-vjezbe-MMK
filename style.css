@@ -9,8 +9,14 @@ h1,h4{
     font-weight: bold;
     text-align: center;
     font-size: 70px;
-    text-shadow: 3px 6px 4px black;
     
+    
+}
+
+h3{
+    text-align: center;
+    color: white;
+    text-shadow: 3px 6px 4px black;
 }
 
 p,li {
@@ -213,6 +219,7 @@ thead tr:nth-child(2) th {
 }
 
 
+
 /* projects.html */
 
 .slike {
@@ -230,12 +237,22 @@ thead tr:nth-child(2) th {
     margin: 0 10px;
 }
 
-.video{
+.video , .audio{
     display: flex;
     justify-content: center;
     align-items: center;    
 }
 
+.video video{
+    
+    max-width: 600px;  
+    width: 100%;        
+    height: auto;       
+    display: block;
+    margin: 0 auto;     
+
+
+}
 
 
 .pdf{
@@ -253,13 +270,14 @@ text-align: center;
 
 
 
+
 @media (max-width: 1024px) {
     .slike img {
         max-width: 45%;
         margin: 10px;
     }
 
-     .video iframe {
+     .video iframe  {
         width: 480px;
         height: 270px;
     }
