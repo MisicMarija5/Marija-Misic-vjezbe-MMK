@@ -338,6 +338,109 @@ text-align: center;
 }
 
 
+/* animacija pozadine iza naslova */
+
+.naslov {
+
+    margin: 40px auto 10px auto;
+    
+    padding: 60px 20px;           
+    text-align: center;
+
+    background: linear-gradient(
+        300deg,
+        #2b2b2b,
+        #4a4a4a,
+        #1f1f1f,
+        #3a3a3a
+    );
+    background-size: 600% 600%;
+
+    animation-name: gradientNaslov;
+    animation-duration: 7s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+.naslov h1 {
+    margin: 0;
+}
+
+@keyframes gradientNaslov {
+    0% {
+        background-position: 0% 50%;
+    }
+    
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+
+/* gumbi na formi */
+form > input[type="submit"],
+form > input[type="reset"] {
+    border: 2px solid #00bfff;
+    transition: all 0.3s ease;
+}
+
+form > input[type="submit"]:hover,
+form > input[type="reset"]:hover {
+    background-color: rgba(0, 191, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+
+/* istaknute sve ostale liste nakon prve */
+.lista1:first-of-type ~ .lista1 {
+    background-color: rgba(100, 100, 100, 0.05);
+    border-radius: 5px;
+    
+}
+
+
+/* liniaj izmedju redaka */
+tbody tr + tr {
+    border-top: 2px solid rgba(32, 35, 205, 0.805); 
+}
+
+
+
+/* istaknut  svaki drugi elemnet u tablici  */
+tbody tr:nth-of-type(odd) td {
+    background-color: rgba(50, 50, 50, 0.6);
+}
+
+tbody tr:nth-of-type(even) td {
+    background-color: rgba(80, 80, 80, 0.6);
+}
+
+
+/* animacija na sikama */
+.projekt:hover {
+    animation: floatProject 0.6s ease forwards;
+}
+
+@keyframes floatProject {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+
+/* lagani fade na pocetni tekst */
+#uvod.pozadina .tekst {
+    animation: fadeInText 2s ease forwards;
+}
+
+@keyframes fadeInText {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
 
 
 
